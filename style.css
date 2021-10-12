@@ -1,0 +1,47 @@
+header
+{
+    border: 1px solid blue;
+}
+.ville
+{
+    background-color:#DEEBFF ;
+}
+.exploration-restaurant
+{
+    background-color:#F2F2F2;
+}
+.fonctionnement
+{
+    border: blue solid 1px;
+}
+#boutton
+{
+    background-color:#FF79DA ;
+}
+#restaurant, .menu, .entree, .plat, .desserts, 
+{
+    border: solid blue 1px;
+ }
+.img1
+{ 
+    height: 150px;
+    width:auto;
+}
+footer
+{
+    border: solid blue 1px;
+}
+.choix, .composer-menu, .deguster
+{
+    display:flex;
+}
+#logo 
+{
+    width: 200px;
+    height: auto;
+}
+#logo1
+{
+    width: 100px;
+
+}
