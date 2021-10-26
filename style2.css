@@ -1,0 +1,189 @@
+#logo 
+{
+    width: 200px;
+    height: auto;
+}
+a
+{
+    color: black;
+}
+
+header, .titre
+{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+ }
+ .img1
+ {
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+ }
+.menu
+{
+   
+    position: relative;
+    margin-top: -50px;
+    background-color:#e9e6e6 ;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.titre
+{
+    font-family: 'Shrikhand' ;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+h3{
+
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color:#99E2D0 ;
+    text-decoration-style: solid;
+}
+.entree1
+{
+    height: 60px;
+  
+  display:flex;
+  background-color: white;
+ margin: 20px;
+padding-left: 10px;
+  border-radius: 1em;
+  justify-content:space-between;
+  animation-duration: 3s;
+  animation-name: glissement;
+  animation-iteration-count:initial ;
+ 
+  
+}
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ 
+#boutton
+{
+   
+   background-color:#9356dc ;
+    padding: 5;
+    color: white;
+    height: 45px;
+    width: 50%;
+    border-radius: 2rem;
+    margin: 40px 120px ;
+    border: none;
+    font-size: 16px;
+   
+    
+}
+
+.titre1, .prix
+{
+    font-family: 'roboto';
+    font-weight: bold;
+    
+}
+.description1
+{
+    color: rgb(78, 76, 76);
+    font-family: 'roboto';
+    white-space: nowrap; 
+    width:80%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    animation: grow 1s ease-in-out 0.15s infinite;
+     
+}
+.description
+{   width: 55%;
+    
+   
+}
+
+
+#boutton:hover
+{
+   cursor:pointer;
+    background:linear-gradient(#FF79DA,#9356DC) ;
+    box-shadow: 2px 2px 4px #9356DC;
+}
+
+
+
+#contact
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+.prix
+{
+    width: 10%;
+}
+.proposer-restaurant, .partenaire, .mention
+{
+    padding-bottom: 5px;
+}
+.choix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 20px;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 23px;
+    right: -28px;
+    
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+  }
+  .choix .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+  }
+  .entree1:hover {
+    padding-right: 70px;
+  }
+  .entree1:hover .choix {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+  .entree1:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
+  footer 
+{
+width: auto;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    
+}
+#logo1
+{
+
+    width: 25%;
+    height: 25%;
+   filter: invert(100%);
+   padding-bottom: 20px;
+   padding-top: 25px;
+
+}
