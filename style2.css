@@ -1,3 +1,6 @@
+body{
+  font-family: 'roboto';
+}
 #logo 
 {
     width: 200px;
@@ -43,9 +46,13 @@ img{
 h3{
 
     font-weight: normal;
-    text-decoration: underline;
-    text-decoration-color:#99E2D0 ;
-    text-decoration-style: solid;
+ }
+.trait
+{
+  border: 2px solid #99E2D0;
+  margin-top: -10px;
+  width: 40px;
+
 }
 .entree1
 {
@@ -53,7 +60,7 @@ h3{
   
   display:flex;
   background-color: white;
- margin: 20px;
+ margin: 15px;
 padding-left: 10px;
   border-radius: 1em;
   justify-content:space-between;
@@ -102,7 +109,7 @@ padding-left: 10px;
     color: rgb(78, 76, 76);
     font-family: 'roboto';
     white-space: nowrap; 
-    width:80%; 
+    width:70%; 
     overflow: hidden;
     text-overflow: ellipsis; 
     animation: grow 1s ease-in-out 0.15s infinite;
@@ -133,7 +140,7 @@ padding-left: 10px;
 
 .prix
 {
-    width: 10%;
+    width: 20%;
 }
 .proposer-restaurant, .partenaire, .mention
 {
@@ -144,13 +151,13 @@ padding-left: 10px;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 20px;
+    width: 10px;
     height: auto;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
     padding: 23px;
-    right: -28px;
+    right: 10px;
     
     opacity: 0;
     transition: transform 330ms ease-in-out;
@@ -164,7 +171,7 @@ padding-left: 10px;
   }
   .entree1:hover .choix {
     opacity: 1;
-    transform: translate(-50px);
+    transform: translate(-6px);
   }
   .entree1:hover .fa-check-circle {
     transform: rotate(360deg);
@@ -180,10 +187,50 @@ width: auto;
 #logo1
 {
 
-    width: 25%;
+    width: 100px;
     height: 25%;
    filter: invert(100%);
    padding-bottom: 20px;
    padding-top: 25px;
 
 }
+@media screen and (min-width:1200px)
+{
+  header{
+   
+    justify-content:space-evenly;
+    padding: 30px;
+  }
+  .menu{
+    display: block;
+  }
+  .entree-plat-dessert
+  {
+    display: flex;
+    justify-content: space-around;
+    border: solid 1x white;
+  }
+  #boutton{
+    width: 20%;
+   
+  }
+  .bouton-commander
+  {
+    text-align: end;
+  }
+  .entree1:hover .choix {
+    opacity: 1;
+    transform: translate(-6px);
+    position: relative;
+    
+    
+  }
+  .choix
+  {
+    
+    left: 75px;
+    
+  }
+  
+  
+ }
