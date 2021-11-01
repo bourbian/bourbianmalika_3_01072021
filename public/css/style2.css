@@ -1,0 +1,256 @@
+body{
+  font-family: 'roboto';
+}
+#logo 
+{
+    width: 200px;
+    height: auto;
+}
+.fa-heart
+{
+    display: flex;
+    font-size: 1.5em;
+    color:#F2F2F2;
+    text-shadow: 0 0 4px #000; 
+}
+.fa-heart:hover
+{cursor: pointer;
+  color:#d361b3;
+text-shadow: 4px 4px 6px #9356DC;
+transition:  2s,  2s, color 2s,  2s;
+}
+a
+{
+    color: black;
+}
+
+header, .titre
+{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+ }
+ .img1
+ {
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+ }
+.menu
+{
+   
+    position: relative;
+    margin-top: -50px;
+    background-color:#e9e6e6 ;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.titre
+{
+    font-family: 'Shrikhand' ;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+h3{
+
+    font-weight: normal;
+ }
+.trait
+{
+  border: 2px solid #99E2D0;
+  margin-top: -10px;
+  width: 40px;
+
+}
+.entree1
+{
+    height: 60px;
+    box-shadow: 4px 4px 6px #fff;
+  display:flex;
+  background-color: white;
+ margin: 15px;
+padding-left: 10px;
+  border-radius: 1em;
+  justify-content:space-between;
+  animation-duration: 3s;
+  animation-name: glissement;
+  animation-iteration-count:initial ;
+ 
+  
+}
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ 
+#boutton
+{
+   
+   background-color:#9356dc ;
+    padding: 5;
+    color: white;
+    height: 45px;
+    width: 50%;
+    border-radius: 2rem;
+    margin: 40px 120px ;
+    border: none;
+    font-size: 16px;
+   
+    
+}
+
+.titre1, .prix
+{
+    font-family: 'roboto';
+    font-weight: bold;
+    
+}
+.description1
+{
+    color: rgb(78, 76, 76);
+    font-family: 'roboto';
+    white-space: nowrap; 
+    width:70%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    animation: grow 1s ease-in-out 0.15s infinite;
+     
+}
+.description
+{   width: 55%;
+    
+   
+}
+
+
+#boutton:hover
+{
+   cursor:pointer;
+    background:linear-gradient(#FF79DA,#9356DC) ;
+    
+    box-shadow: 4px 4px 6px #000
+}
+
+
+
+#contact
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+.prix
+{
+    width: 20%;
+}
+.proposer-restaurant, .partenaire, .mention
+{
+    padding-bottom: 5px;
+}
+.choix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 10px;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 23px;
+    right: 10px;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+  }
+  .choix .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+    
+  }
+  .entree1:hover {
+    padding-right: 70px;
+    cursor:progress ;
+  }
+  .entree1:hover .choix {
+    opacity: 1;
+    transform: translate(-6px);
+    cursor: pointer;
+  }
+  .entree1:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
+  footer 
+{
+width: auto;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    
+}
+#logo1
+{
+
+    width: 100px;
+    height: 25%;
+   filter: invert(100%);
+   padding-bottom: 20px;
+   padding-top: 25px;
+
+}
+
+@media screen and (min-width:1200px)
+{
+  header{
+   
+    justify-content:space-evenly;
+    padding: 30px;
+  }
+  .menu{
+    display: block;
+  }
+  .entree-plat-dessert
+  {
+    display: flex;
+    justify-content: space-around;
+    border: solid 1x white;
+  }
+  #boutton{
+    width: 20%;
+    
+   
+  }
+  .bouton-commander
+  {
+    text-align: right;
+    
+    
+  }
+  .entree1:hover .choix {
+    opacity: 1;
+    transform: translate(-6px);
+    position: relative;
+    
+    
+  }
+  .choix
+  {
+    
+    left: 75px;
+    
+  }
+  
+  
+ }
