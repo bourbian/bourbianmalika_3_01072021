@@ -99,7 +99,7 @@ padding-left: 10px;
 {
    
    background-color:#9356dc ;
-    padding: 5;
+    padding: 5px;
     color: white;
     height: 45px;
     width: 50%;
@@ -182,12 +182,10 @@ padding-left: 10px;
   }
   .entree1:hover {
     padding-right: 70px;
-    cursor:progress ;
-  }
+ }
   .entree1:hover .choix {
     opacity: 1;
     transform: translate(-6px);
-    cursor: pointer;
   }
   .entree1:hover .fa-check-circle {
     transform: rotate(360deg);
@@ -225,17 +223,14 @@ width: auto;
   {
     display: flex;
     justify-content: space-around;
-    border: solid 1x white;
+    border: 1px solid white;
   }
   #boutton{
-    width: 20%;
-    
-   
+    width: 20%; 
   }
   .bouton-commander
   {
     text-align: right;
-    
     
   }
   .entree1:hover .choix {

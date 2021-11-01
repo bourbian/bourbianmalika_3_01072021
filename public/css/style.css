@@ -140,7 +140,7 @@ padding-top: 15px;
 #boutton
 {
     background-color: #9356DC ;
-    padding: 5;
+    padding: 5px;
     color: white;
     height: 45px;
     width: 50%;
@@ -300,9 +300,8 @@ footer
 }
 .choix2
 {
-    opacity: 10;
-    background-color:#f7eef7e8;
-    display: flex;
+background-color:#f7eef7e8;
+display: flex;
 width: 95%;
 height: 40px;
 justify-content:space-evenly;
