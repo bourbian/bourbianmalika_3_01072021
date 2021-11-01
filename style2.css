@@ -6,6 +6,19 @@ body{
     width: 200px;
     height: auto;
 }
+.fa-heart
+{
+    display: flex;
+    font-size: 1.5em;
+    color:#F2F2F2;
+    text-shadow: 0 0 4px #000; 
+}
+.fa-heart:hover
+{cursor: pointer;
+  color:#d361b3;
+text-shadow: 4px 4px 6px #9356DC;
+transition:  2s,  2s, color 2s,  2s;
+}
 a
 {
     color: black;
@@ -57,7 +70,7 @@ h3{
 .entree1
 {
     height: 60px;
-  
+    box-shadow: 4px 4px 6px #fff;
   display:flex;
   background-color: white;
  margin: 15px;
@@ -194,6 +207,7 @@ width: auto;
    padding-top: 25px;
 
 }
+
 @media screen and (min-width:1200px)
 {
   header{
@@ -212,11 +226,14 @@ width: auto;
   }
   #boutton{
     width: 20%;
+    
    
   }
   .bouton-commander
   {
-    text-align: end;
+    text-align: right;
+    
+    
   }
   .entree1:hover .choix {
     opacity: 1;

@@ -91,7 +91,7 @@ header > div
   
 }
 
-.fonctionnement > div
+.menu-fonctionnement > div
 {
    
     padding: 15px;
@@ -293,8 +293,7 @@ footer
     font-size: 3em;
     color:#F2F2F2;
     text-shadow: 0 0 4px #000;
-    /* background-clip:border-box;  
-    opacity: 0.6;*/
+   
     
     
 }
@@ -317,44 +316,92 @@ box-shadow: 5px 5px 5px #F2F2F2;
 text-shadow: 4px 4px 6px #9356DC;
 transition:  2s,  2s, color 2s,  2s;
 }
-@media screen and (min-width: 1200px)
+
+@media screen and (min-width:800px)
 {
-   .fonctionnement
-   {
-       display: flex;
-       justify-content: space-around;
-       margin-top: 50px;
-       
-   }
+.image{
+    width: 100%;
+
+}
+.restaurant{
+    
+    display:block;
+}
+.restaurants-importants
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.fonctionnement{
+    display: block;
+}
+.menu-fonctionnement
+{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant1{
+    width: 45%;
+}
+.nouveau{
+    position: relative;
+    left: 150px;
+}
+.numero{
+    position:relative;
+    left: 7px;
+}
+.choix, .composer-menu, .deguster
+{
+    width: 30%;
+}
+.footer{
+    justify-content: center;
+}
+  }
+  @media screen and (min-width: 1200px)
+{
+   
+   .image{
+    width: 100%;
+
+}
+.restaurant{
+    
+    display:block;
+}
+.restaurants-importants
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.fonctionnement{
+    display: block;
+}
+.menu-fonctionnement
+{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant1{
+    width: 20%;
+     }
    .choix, .composer-menu, .deguster {
        width: 20%;
    }
-   .numero{
+   
+  .numero{
     position:relative;
     left: 10px;
-   }
-   .restaurant{
-       display: flex;
-   }
-   h4{
-       text-align: center;
-      
-       
-       padding-top: 20px;
-      
-   }
-   #fonctionnement, #restaurant
-   {
-       display: none;
-   }
-   .restaurant1{
-       width: 20%;
-       justify-content: space-evenly;
-       padding-left: 20px;
    }
    .nouveau
    {
     position: relative;
     top: -280px;left: 150px;
    }
+   .footer{
+    justify-content: center;
+    }
 }
