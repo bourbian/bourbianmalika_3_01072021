@@ -278,13 +278,18 @@ footer
 .nouveau
 {
     width: 20%;
-    height: 35px;
+    height: 25px;
     position: relative;
     top: -280px;
     left: 70%;
     text-align: center;
     background-color: #99E2D0;
     color: rgb(6, 138, 120);
+    font-family: 'roboto';
+    font-weight: bold;
+    padding-top: 8px;
+     box-shadow: 4px 4px 6px white;
+     border-radius: 2px;
 
 }
 .fa-heart
