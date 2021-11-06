@@ -275,14 +275,13 @@ footer
     height: auto;
 }
 
-
-
 .nouveau
 {
-    width: 100px;
+    width: 20%;
     height: 35px;
     position: relative;
-    top: -280px;left: 300px;
+    top: -280px;
+    left: 70%;
     text-align: center;
     background-color: #99E2D0;
     color: rgb(6, 138, 120);
@@ -344,10 +343,11 @@ transition:  2s,  2s, color 2s,  2s;
 .restaurant1{
     width: 45%;
 }
-.nouveau{
+/*.nouveau{
     position: relative;
     left: 150px;
-}
+
+}*/
 .numero{
     position:relative;
     left: 7px;
@@ -396,8 +396,9 @@ transition:  2s,  2s, color 2s,  2s;
    }
    .nouveau
    {
-    position: relative;
-    top: -280px;left: 150px;
+    /*position: relative;
+    top: -280px;left: 150px;*/
+    width: 25%;
    }
   
 }

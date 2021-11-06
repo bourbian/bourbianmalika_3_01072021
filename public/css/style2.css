@@ -234,8 +234,9 @@ width: auto;
   .entree-plat-dessert
   {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 1px solid white;
+    
   }
   #boutton{
     width: 20%; 
@@ -258,6 +259,10 @@ width: auto;
     left: 75px;
     
   }
-  
+  .entree, .plat, .desserts{
+    width: 400px; 
+    
+   }
+ 
   
  }
