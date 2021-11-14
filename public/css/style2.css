@@ -1,15 +1,38 @@
 body{
-  font-family: 'roboto';
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+h4{
+  font-family: 'Shrikhand' ;
+    font-size: 30px;
+    margin-top:-10px;
+   
+}
+.titre{
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 #logo 
 {
-    width: 200px;
+    width: 130px;
     height: auto;
+   
+}
+.fa-arrow-left
+{
+  font-size: 20px;
+  color: #353535;
 }
 .fa-heart
 {
     display: flex;
-    font-size: 1.5em;
+    font-size: 28px;
     color:#F2F2F2;
     text-shadow: 0 0 4px #000; 
 }
@@ -24,19 +47,18 @@ a
     color: black;
 }
 
-header, .titre
+header
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-right: 20%;
+    margin-bottom: 10px;
+   
 }
-img{
-    height: 300px;
-    width:100%;
-    object-fit: cover;
- }
+
  .img1
  {
-    height: 300px;
+    height: 250px;
     width:100%;
     object-fit: cover;
  }
@@ -45,47 +67,43 @@ img{
    
     position: relative;
     margin-top: -50px;
-    background-color:#e9e6e6 ;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    background-color:#f6f6f6 ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
 }
-.titre
-{
-    font-family: 'Shrikhand' ;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-h3{
 
-    font-weight: normal;
- }
 .trait
 {
-  border: 2px solid #99E2D0;
-  margin-top: -10px;
+  
+  margin-top: 8px;
+  margin-bottom: 15px;
   width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left:8px;
+}
+.titre-entree
+{
+margin-left: 10px;
+  color: #353535;
+}
+.entree-trait{
+  padding-left: 10px;
+}
+
+.entree
+{ margin: 10px;
 
 }
-.entree1
-{cursor: pointer;
-    height: 60px;
-    box-shadow: 4px 4px 6px #fff;
-    display:flex;
-    background-color: white;
-    margin: 15px;
-    padding-left: 10px;
-    border-radius: 1em;
-    justify-content:space-between; 
-}
-.entree1{
- animation: fadein 3s ease-in-out; 
+
+.entree{
+ animation: fadein 2s ease-in-out; 
 }
 .plat{
-animation: fadein 6s ease-in-out; 
+animation: fadein 3s ease-in-out; 
 }
 .desserts{
-  animation: fadein 9s ease-in-out;
+  animation: fadein 4s ease-in-out;
 }
 @keyframes fadein {
   from {
@@ -95,64 +113,85 @@ animation: fadein 6s ease-in-out;
     opacity: 1;
   }
  }
-/*@keyframes glissement {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}*/
- 
 #boutton
-{
-   
-   background-color:#9356dc ;
-    padding: 5px;
-    color: white;
-    height: 45px;
-    width: 50%;
-    border-radius: 2rem;
-    margin: 40px 120px ;
-    border: none;
-    font-size: 16px;
-   
-    
+{background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  
+  box-shadow: 4px 4px 6px #9356dc;
+  cursor: pointer;
+  margin: 30px 0;
+  width: 50%;
+   font-family: 'roboto';
+  font-size: 16px;
+  
 }
-
-.titre1, .prix
+.bouton-commander{
+ display: flex;
+  justify-content: center;
+}
+ .prix
 {
     font-family: 'roboto';
     font-weight: bold;
-    
+    margin-right: 10px;
 }
+
+
+
 .description1
 {
-    color: rgb(78, 76, 76);
-    font-family: 'roboto';
-    white-space: nowrap; 
-    width:70%; 
     overflow: hidden;
-    text-overflow: ellipsis; 
-    animation: grow 1s ease-in-out 0.15s infinite;
-     
+    text-overflow: ellipsis;
+  animation: grow 1s ease-in-out 0.15s infinite;
+   display: flex;
+   justify-content: space-between;
+   width: auto;
+   font-family: 'roboto';
+}
+.desc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: auto;
+  font-family: 'roboto';
+  font-size: 14px;
+  color: #353535;
+  
+}
+.title{
+  font-weight: bold;
+  font-size: 16px;
+ padding-bottom: 5px;
+ font-family: 'roboto';
+}
+h4{
+  font-weight: normal;
 }
 .description
-{   width: 55%;
-    
-   
+{  
+  background-color: #fff;
+  border-radius: 15px;
+ padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: 'roboto';
 }
 
 
 #boutton:hover
 {
    cursor:pointer;
-    background:linear-gradient(#FF79DA,#9356DC) ;
-    
-    box-shadow: 4px 4px 6px #000
+  
+    box-shadow: 4px 4px 6px #000;
+    background-color: #ae80e5;
+  background-blend-mode: lighten;
+ 
 }
 
 
@@ -164,50 +203,58 @@ animation: fadein 6s ease-in-out;
 
 }
 
-.prix
-{
-    width: 20%;
-}
+
 .proposer-restaurant, .partenaire, .mention
 {
     padding-bottom: 5px;
 }
 .choix {
+   
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 10px;
-    height: auto;
+    width: 20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
-    padding: 23px;
-    right: 10px;
+    padding: 20px;
+    right: -50px;
+    top: 0;
+    bottom: 0;
     opacity: 0;
-    transition: transform 330ms ease-in-out;
+    right: 0;
+    transition: transform 300ms ease-in-out;
+    
+  
   }
   .choix .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
     
   }
-  .entree1:hover {
-    padding-right: 70px;
+  
+  .description:hover {
+    padding-right: 75px;
  }
-  .entree1:hover .choix {
+  .description:hover .choix {
     opacity: 1;
-    transform: translate(-6px);
-  }
-  .entree1:hover .fa-check-circle {
+    transform: translate(0px);
+}
+  
+  .description:hover .fa-check-circle {
     transform: rotate(360deg);
+  }
+  .entree-plat-dessert{
+    margin-top: -30px;
   }
   footer 
 {
 width: auto;
-    background-color: black;
+    background-color: #353535;
     color: rgb(255, 255, 255);
     padding-left: 10px;
+    font-family: 'roboto';
     
 }
 #logo1
@@ -228,14 +275,19 @@ width: auto;
     justify-content:space-evenly;
     padding: 30px;
   }
+  .img1{
+    height: 400px;
+  }
   .menu{
     display: block;
+    margin-top: -40px;
   }
   .entree-plat-dessert
   {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
+    
+   justify-content: space-around;
+    display: flex; 
+   
     
   }
   #boutton{
@@ -246,22 +298,23 @@ width: auto;
     text-align: right;
     
   }
-  .entree1:hover .choix {
-    opacity: 1;
-    transform: translate(-6px);
-    position: relative;
-    
-    
+  .choix{ 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    right: 0;
+
   }
-  .choix
-  {
-    
-    left: 75px;
-    
+  .description:hover .choix {
+    opacity: 1;
+    transform: translate(0px);
+    display: flex;
+    position: absolute; 
   }
   .entree, .plat, .desserts{
-    width: 400px; 
-    
+    width: 350px;   
+   margin: 10px;
    }
  
   
