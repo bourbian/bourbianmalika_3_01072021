@@ -1,0 +1,411 @@
+
+/*Loader spinner*/
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    animation: loader 3s forwards;
+  }
+  
+  /*Animation loader*/
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  #loader {
+     border: 1.8rem solid pink;
+    
+    border-top: 1.8rem solid purple;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-bottom: 10px solid #FF79DA;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear forwards;
+    /*Placement du loader au milieu de la page*/
+   margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /*Animation container*/
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  
+header > div 
+{   
+   
+    text-align: center;
+    padding: 15px;
+}
+.reserver-menu{
+ font-weight: bolder;
+ font-size: 17px;
+ font-family: 'Roboto';
+ margin-bottom: 10px;
+ color: #000;
+}
+.decouvrer-restaurant{
+    font-size: 15px;
+    color: rgb(138, 135, 135);
+    margin-bottom: 5px;
+}
+
+.ville
+{
+    background-color:#e1e4e9 ;
+    font-family:'roboto' ;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(109, 101, 101);
+}
+.nom-restaurant
+{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.fa-map-marker-alt
+{
+    padding-right: 15px;
+}
+.exploration-restaurant 
+{
+    background-color:#F2F2F2;
+    font-family: 'roboto';
+  
+}
+
+h4
+{ 
+       margin-left: 20px;
+       margin-top: 35px;
+      margin-bottom:5px;
+      font-size: 22px;
+    font-weight: bold;
+    font-family: 'roboto'
+ }
+
+  .titre
+  {
+      font-weight: bold;
+      font-family: 'roboto';
+      margin-left: -5px;
+  }
+.choix1{ 
+display: flex;
+width: 95%;
+height: 30px;
+justify-content:space-evenly;
+border-radius: 20px ;
+background-color:#F2F2F2; 
+box-shadow: 5px 5px 5px #F2F2F2;   
+text-align: center;
+padding-top: 20px;
+}
+.choix2
+{
+background-color:#f7eef7e8;
+display: flex;
+width: 95%;
+height: 30px;
+justify-content:space-evenly;
+border-radius: 20px ;   
+text-align: center;
+padding-top: 20px;
+box-shadow: 5px 5px 5px #F2F2F2;  
+}
+.fa-store
+{
+    color:#9356DC;
+}
+.numero
+{
+    border-radius: 50%;
+    background-color:#9356DC ;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 18px;
+    position:absolute;
+    left: 18px;
+    color: white;
+    padding-top: 2px;
+}
+
+#boutton
+{ background:linear-gradient(#9356DC,#FF79DA) ;
+    /*background-color: #FF79DA ;*/
+    padding: 5px;
+    color: white;
+    height: 45px;
+    width: 65%;
+    border-radius: 2rem;
+    margin: 20px;
+    border: none;
+    font-size: 14px;
+   
+}
+#boutton:hover
+{
+   cursor:pointer;
+ box-shadow: 4px 4px 6px rgb(134, 125, 125);
+}
+.restaurant 
+{
+    background-color:#F2F2F2; 
+   padding-bottom: 30px;
+    padding-top: 10px;
+    margin-top: 25px;
+    
+ }
+.img1
+{   max-height: 220px;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+   
+}
+.image
+{
+    text-align: center;
+}
+
+.partie2
+{
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    margin-top: -5px;
+    justify-content: space-between;
+    font-family: 'roboto';
+}
+.partie3
+{
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    margin-top: -40px;
+    justify-content: space-between;
+    font-family: 'roboto';
+}
+.coeur 
+{
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+footer 
+{
+
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: 'roboto';
+}
+#logo1
+{
+    width: 100px;
+   filter: invert(100%);
+   padding-bottom: 20px;
+
+}
+.proposer-restaurant, .partenaire, .mention
+{
+    padding-bottom: 10px;
+}
+
+#contact
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+.composer-menu, .deguster, .choix
+{
+    display:flex;
+   justify-content: center;
+   /* height: 10%;*/
+   font-size: 12px;
+   padding: 10px;
+   
+}
+
+.description
+{
+    
+    
+   height: 60px;
+    padding-left: 13px;
+   
+    padding-top: 20px;
+    
+}
+.restaurant1
+{
+    width: auto;
+  
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.restaurant2
+{
+    padding-bottom: 0px;
+}
+   
+#logo 
+{
+    width: 200px;
+    height: auto;
+}
+
+.nouveau
+{
+    width: 20%;
+    height: 25px;
+    position: relative;
+    top: -200px;
+    left: 70%;
+    text-align: center;
+    background-color: #99E2D0;
+    color: rgb(6, 138, 120);
+    font-family: 'roboto';
+    font-weight: bold;
+    padding: 5px 5px 5px 2px ;
+  
+     border-radius: 2px;
+
+}
+.fa-heart
+{
+    display: flex;
+    font-size: 20px;
+    color:#F2F2F2;
+    text-shadow: 0 0 4px #000;
+   
+    
+    
+}
+
+.fa-heart:hover
+{cursor: pointer;
+  color:#d361b3;
+text-shadow: 4px 4px 6px #9356DC;
+transition:  2s,  2s, color 2s,  2s;
+}
+
+@media screen and (min-width:800px)
+{
+.image{
+    width: 100%;
+
+}
+.restaurant{
+    
+    display:block;
+}
+.restaurants-importants
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.fonctionnement{
+    display: block;
+}
+.menu-fonctionnement
+{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant1{
+    width: 45%;
+}
+.numero{
+    position:relative;
+    left: 7px;
+}
+.choix, .composer-menu, .deguster
+{
+    width: 30%;
+}
+
+#boutton{
+    width: 40%;
+}
+  }
+
+  @media screen and (min-width: 1200px)
+{
+ 
+.img1
+{   max-height: 180px;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+   
+}
+.fonctionnement{
+    display: block;
+}
+.menu-fonctionnement
+{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant1{
+    width: 20%;
+     }
+.choix, .composer-menu, .deguster {
+       width: 20%;
+   }
+   
+  .numero{
+    position:relative;
+    left: 10px;
+   }
+   .nouveau
+   {
+    left: 160px;
+    width: 75px;
+    top: -170px;
+    
+   }
+   #boutton{
+    width: 30%;
+}
+}
